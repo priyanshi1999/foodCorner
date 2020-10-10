@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_corner/category_item.dart';
+import 'package:food_corner/widgets/category_item.dart';
 //import './models/category.dart';
 import 'package:food_corner/dummy_data.dart';
 
@@ -9,7 +9,8 @@ class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
+    return 
+    /* Scaffold(
       appBar: AppBar(
         title: const Text(
           'Meals',
@@ -18,7 +19,8 @@ class CategoriesScreen extends StatelessWidget {
           ),
           ),
       ),
-      body :GridView(
+      body : */
+      GridView(
         padding: const EdgeInsets.all(25),
       children: 
         DUMMY_CATEGORIES.map(
@@ -38,7 +40,6 @@ class CategoriesScreen extends StatelessWidget {
         crossAxisSpacing: 20,
         mainAxisSpacing: 20
         ),
-    ),
     );
   }
 }

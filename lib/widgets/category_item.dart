@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_corner/category_meals_screen.dart';
+import 'package:food_corner/screens/category_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
 
@@ -15,6 +15,7 @@ class CategoryItem extends StatelessWidget {
     },
     ),
     ); */
+
     Navigator.of(ctx).pushNamed(CategoryMealsScreen.routName, arguments: {
       'title':title, 
       'id':id
